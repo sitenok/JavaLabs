@@ -1,1 +1,3 @@
-
+Using file processing
+Opening, reading a file called "roles.txt";
+Comparing file content to an object's attribute
