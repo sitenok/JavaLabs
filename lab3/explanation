@@ -1,0 +1,2 @@
+Using inheritance
+Instantiating objects using sub-classes(hourlyEmployee and salesEmployee), inheriting from "Employee"
