@@ -1,1 +1,6 @@
 A GUI driven guessing game
+The screen generates a random number between 0 and 100, when the user clicks “Generate random number”;
+Uses Random class from the java API to generate a random number;
+For each guess the program replies “Correct”, “Too low”, or “Too high”;
+If the number is correct, the Screen shows how many number of guesses it took;
+If not, the program asks the user to guess again.
