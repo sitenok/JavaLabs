@@ -1,1 +1,3 @@
-
+Using Interfaces, polymorphism.
+currentAccount and depositAccount inherit from Account;
+validateAccount interface uses methods in Account to print Strings.
