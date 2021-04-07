@@ -1,0 +1,11 @@
+Java Collections: ArrayLists
+
+Arraylist stores <Person> objects;
+Prints length of the array list;
+prints  the  contents  of  the  array list by looping;
+Copying/cloning arraylists;
+
+GUI:
+"Save" button populates an ArrayList with Person objects, using the data entered in the three text fields to populate each object;
+"Show all" button should display all the objects from the ArrayList in a text area (JTextArea);
+"Delete" button
