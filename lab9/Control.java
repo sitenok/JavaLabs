@@ -14,7 +14,6 @@ public class Control {
 		System.out.println(p2);
 		Person p3 = new Person ("Pablo", "Grant", "Milan");
 		System.out.println(p3);
-		Person pep = new Person();
 		
 		//ArrayList<Person> people = new ArrayList<Person>();
 		ArrayList<Person> people = new ArrayList<Person>();
@@ -24,11 +23,14 @@ public class Control {
 		
 		System.out.println("ArrayList length: "+people.size());
 		
-		//loop through array to print objects
+		//for loop through array to print objects
 		for(count=0; count<people.size(); count++)
 		{
-			pep = people.get(count);
-			System.out.println(pep.toString());
+			System.out.println(people.get(count));
+		}
+		for(Person non : people)
+		{
+			System.out.println("\n"+non);
 		}
 		
 		//making a copy of array list
@@ -36,6 +38,8 @@ public class Control {
 		
 		//GUI of Array
 		ArrayGui gui = new ArrayGui(null);
+		
+		//
 		
 	}
 
