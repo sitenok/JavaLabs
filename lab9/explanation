@@ -6,6 +6,6 @@ prints  the  contents  of  the  array list by looping;
 Copying/cloning arraylists;
 
 GUI:
+Three text field areas for user input which is stored in attributes firstName, surName, city of and object Person.
 "Save" button populates an ArrayList with Person objects, using the data entered in the three text fields to populate each object;
-"Show all" button should display all the objects from the ArrayList in a text area (JTextArea);
-"Delete" button
+"Show all" button should display all the objects from an ArrayList in a text area (JTextArea);
