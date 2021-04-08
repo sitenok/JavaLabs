@@ -14,7 +14,6 @@ public class Person
 		setSurName(surName);
 		setCity(city);
 	}
-	
 	public Person()
 	{
 		
