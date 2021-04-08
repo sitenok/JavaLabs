@@ -35,7 +35,7 @@ public class ArrayGui extends JFrame implements ActionListener
 	ArrayGui(String title)
 	{
 		super(title);
-		setSize(300,300);
+		setSize(500,400);
 		setLayout(new FlowLayout());
 		
 		//label and text field for user input
@@ -78,7 +78,6 @@ public class ArrayGui extends JFrame implements ActionListener
 		
 		//Text area to display data of ArrayList
 		data = new JTextArea(5, 20);
-		data.setEditable(false);
 		
 		panel4 = new JPanel();
 		panel4.add(data);
@@ -94,23 +93,20 @@ public class ArrayGui extends JFrame implements ActionListener
 	{
 		if(e.getSource() == saveButton)
 		{
-			String name = this.input1.getText(); //get the text and store into var
+			String name = this.input1.getText(); //get the text inputed (input1) and store into var name
 			String surname = this.input2.getText();
 			String city = this.input3.getText();
-//			people2.add(name);
+//			people2.add(setName(name));
 //			people2.add(surname);
 //			people2.add(city);
 			
-			//loop through array to add objects
-			for(count=0; count<people2.size(); count++)
-			{
-				Person pep = new Person(); //temporary "object"
-				pep.setFirstName(name +count);
-				pep.setSurName(surname +count);
-				pep.setCity(city +count);
-				people2.add(pep);
-			}
-			System.out.println(people2);
+			//create and add objects to a new array list "people2", an array list of inputed values
+			Person pep = new Person(); //temporary "object" pep
+			pep.setFirstName(name);
+			pep.setSurName(surname);
+			pep.setCity(city);
+			people2.add(pep);
+		
 			JOptionPane.showMessageDialog(this,"Successfully added person "+name+" "+surname+" from "+city);
 		}
 		
@@ -119,7 +115,8 @@ public class ArrayGui extends JFrame implements ActionListener
 			add(panel4); //adds the text area to the GUI when Show pressed
 			for (Person pep: people2)
 			{
-				System.out.println("This person is "+name+"");
+				data.append(pep + "\n"); //add object to text area
+				System.out.println(pep);
 			}
 			
 		}
