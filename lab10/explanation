@@ -1,0 +1,19 @@
+Using a Hash Set to store a list of countries, using the iterator function.
+Learning to use existing methods and functions for Hash Sets/ creating more methods.
+Populating a Hash Set with elements of an existing array (asList). 
+Array called countries, HashSet called europe.
+
+1. Printing the Hash set using an iterator object. 
+2. Add an entry to the Hash set. = 
+    HashSet.add(input)
+3. Matching input to an element in the hash set (true/false) = 
+    if(HashSet.contains(input))
+4. Clearing a set. = 
+    europe.clear();
+5. Sorting contents of Hash Set by creating a temp ArrayList & populating with HashSet elements( ArrayList<String> tempArray = new ArrayList<String>(europe); )
+    = to use the Collections.sort() function. 
+   Shuffling contents in the same way 
+    = Collections.reverse(tempArray);
+   Showing reverse of the hash set
+    = Collections.reverse(tempArray)
+    
