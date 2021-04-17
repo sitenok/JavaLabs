@@ -15,5 +15,5 @@ Array called countries, HashSet called europe.
    Shuffling contents in the same way 
     = Collections.reverse(tempArray);
    Showing reverse of the hash set
-    = Collections.reverse(tempArray)
+    = Collections.reverse(tempArray);
     
