@@ -1,0 +1,18 @@
+//array holding empty JPanel objects to have "references" to grid
+		int i = 5;
+		int j = 5;
+		JPanel[][] panelHolder = new JPanel[i][j];    
+		setLayout(new GridLayout(i,j));
+
+		for(int m = 0; m < i; m++) 
+		{
+		   for(int n = 0; n < j; n++) 
+		   {
+		      panelHolder[m][n] = new JPanel();
+		      add(panelHolder[m][n]);
+		   }
+		}
+		
+		panelHolder[1][0].add(COMPONENT1);
+		panelHolder[2][0].add(COMPONENT2);
+		panelHolder[3][0].add(COMPONENT3);
